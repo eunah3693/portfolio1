@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Megabox</title>
+	<link rel="stylesheet" type="text/css" href="css/movie.css">
+	<link rel="stylesheet" type="text/css" href="css/join.css">
+	<link href="font/css/all.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<script src="js/join.js"></script>
+</head>
+
+<body>
+	<div class="main_wrap">
+		<!--헤더영역-->
+		<div class="header_visual_wrap">
+
+			<div class="header_wrap">
+				<header>
+					<div class="lnb_wrap">
+						<ul class="lnb">
+							<li>
+								<a href="javascript:login_popup();">
+									로그인
+								</a>
+							</li>
+							<li>
+								<a href="join.html">
+									회원가입
+								</a>
+							</li>
+							<li>
+								<a href="movielist.html">
+									빠른예배
+								</a>
+							</li>
+						</ul>
+					</div>
+					<nav>
+					<div class="gnb_wrap">
+						
+								<i class="fas fa-bars" id="btn_toggle"></i>
+								<ul class="gnb_sub" id="gnb_sub">
+									<div class="login_wrap">
+											<a href="javascript:login_popup();">로그인</a>
+											<a href="join.html">회원가입</a>
+									</div>
+									<li>
+										<a href="movielist.html">
+											<span class="sub_left">		<i class="fas fa-video"></i>
+											영화
+											</span>
+											
+											<i class="fas fa-angle-right"></i>
+										</a>
+									</li>
+									<li>
+										<a href="movielist.html">
+											<span class="sub_left">
+											<i class="fas fa-money-bill-wave-alt"></i>
+											예매
+											</span>
+											
+											<i class="fas fa-angle-right"></i>
+										</a>
+									</li>
+									<li>
+										<a href="movielist.html">
+											<span class="sub_left">
+											<i class="fas fa-couch"></i>
+											극장
+											</span>
+											
+											<i class="fas fa-angle-right"></i>
+										</a>
+									</li>
+									<li>
+										<a href="store.html">
+											<span class="sub_left">
+											<i class="fas fa-bookmark"></i>
+											이벤트
+											</span>
+											
+											<i class="fas fa-angle-right"></i>
+										</a>
+									</li>
+									<li>
+										<a href="store.html">
+											<span class="sub_left">
+											<i class="fas fa-house-user"></i>
+											스토어
+											</span>
+											
+											<i class="fas fa-angle-right"></i>
+										</a>
+									</li>
+									<li>
+										<a href="store.html">
+											<span class="sub_left">
+											<i class="fas fa-shopping-cart"></i>
+											혜택
+											</span>
+											
+											<i class="fas fa-angle-right"></i>
+										</a>
+									</li>
+								</ul>
+
+						<div class="gnb_left_wrap">
+							
+							
+							<ul class="gnb_left">
+								<li>
+									<a href="movielist.html">
+										영화
+									</a>
+								</li>
+								<li>
+									<a href="movielist.html">
+										예매
+									</a>
+								</li>
+								<li>
+									<a href="movielist.html">
+										극장
+									</a>
+								</li>
+								
+							</ul>
+						</div>
+						<h1><a href="index.html"><img src="images/header_logo.png" alt="로고" class="header_logo"></a></h1>
+						<div class="gnb_right_wrap">
+							<ul class="gnb_right">
+								<li>
+									<a href="store.html">
+										이벤트
+									</a>
+								</li>
+								<li>
+									<a href="store.html">
+										스토어
+									</a>
+								</li>
+								<li>
+									<a href="store.html">
+										혜택
+									</a>
+								</li>
+							</ul>
+						</div>
+						
+					</div>
+					</nav>
+
+				</header>
+			</div>
+			<!--메인비쥬얼-->
+			<div class="main_visual_wrap">
+				<div class="movie_poster_wrap movie_poster_img">
+					<div class="movie_poster" style="background-image:url(images/main_visual_poster.jpg);">
+					</div>
+				</div>
+				<div class="movie_info">
+					<div class="movie_info_area">
+						<h2 class="movie_info_0">반도</h2>
+						<b class="movie_info_1">액션,드라마 | 한국 | 116분</b><br>
+						<span  class="movie_info_2">15세 관람가 | 예매율 1위</span>
+					</div>
+					<div class="rating_wrap">
+						<div class="rating num1">
+							<b>네티즌 평점</b><br>
+							<img src="images/rating_star_red.png" alt="평점별">
+							<img src="images/rating_star_red.png" alt="평점별">
+							<img src="images/rating_star_red.png" alt="평점별">
+							<img src="images/rating_star.png" alt="평점별">
+							<img src="images/rating_star.png" alt="평점별">
+						</div>
+						<div class="rating num2">
+							<b>네티즌 평점</b><br>
+							<img src="images/rating_star_red.png" alt="평점별">
+							<img src="images/rating_star_red.png" alt="평점별">
+							<img src="images/rating_star_red.png" alt="평점별">
+							<img src="images/rating_star.png" alt="평점별">
+							<img src="images/rating_star.png" alt="평점별">
+						</div>
+					</div>
+					<a href="#" class="movie_ticketing">예매하기</a>
+				</div>
+				
+			</div>
+		</div>
+		<div class="story_actor_bg">
+			<div class="story_actor_wrap">
+				<div class="story_actor_title">
+					<div class="story_title">줄거리</div>
+					<div class="actor_title">배우/제작진</div>
+				</div>
+				<div class="story_actor_area">
+					<div class="story_wrap">
+						<div class="story">
+							 <b  class="story_0">[전대미문의 재난 그 후 4년 폐허의 땅으로 다시 들어간다!]</b><br><br>
+			
+								<span class="story_1">4년 전, 나라 전체를 휩쓸어버린 전대미문의 재난에서 가까스로 탈출했던 ‘정석’(강동원).
+									바깥세상으로부터 철저히 고립된 반도에 다시 들어가야 하는 피할 수 없는 제안을 받는다.<br>
+									
+									제한 시간 내에 지정된 트럭을 확보해 반도를 빠져 나와야 하는 미션을 수행하던 중 인간성을 상실한 631부대와 4년 전보다 더욱 거세진 대규모 좀비 무리가 정석 일행을 습격한다.<br><br>
+									
+									절체절명의 순간,<br>
+									폐허가 된 땅에서 살아남은 ‘민정’(이정현) 가족의 도움으로 위기를 가까스로 모면하고
+									이들과 함께 반도를 탈출할 수 있는 마지막 기회를 잡기로 한다.<br>
+									
+									되돌아온 자, 살아남은 자 그리고 미쳐버린 자
+									필사의 사투가 시작된다!</span>
+						</div>
+					</div>
+					<div class="actor">
+						<ul class="actor_list">
+							<li  class="actor_0">
+								<img src="images/bando_actor1.jpg" alt="배우"  >
+							</li>
+							<li  class="actor_1">
+								<img src="images/bando_actor2.jpg" alt="배우">
+							</li>
+							<li class="actor_2">
+								<img src="images/bando_actor3.jpg" alt="배우">
+							</li>
+							<li class="actor_3">
+								<img src="images/bando_actor4.jpg" alt="배우">
+							</li>
+							<li class="actor_4">
+								<img src="images/bando_actor5.jpg" alt="배우">
+							</li>
+							<li class="actor_5">
+								<img src="images/bando_actor6.jpg" alt="배우">
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="play_bg">
+			<div class="play_wrap">
+				<h2 class="play_title">예고편</h2>
+				<div class="play_main" >
+					<iframe src="https://www.youtube.com/embed/fcueArgm800" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<ul class="play_list">
+					<li onclick="play_division(0)">
+						<div class="play play_img_0">
+							<img src="images/main_play.PNG">
+						</div>
+						<span>메인 예고편</span>
+					</li>
+					<li onclick="play_division(1)">
+						<div class="play play_img_1">
+							<img src="images/making_play.PNG">
+						</div>
+						<span>메이킹 필름</span>
+					</li>
+					<li onclick="play_division(2)">
+						<div class="play play_img_2">
+							<img src="images/teaser_play.PNG">
+						</div>
+						<span>티저 영상</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="photo_bg">
+			<div class="photo_wrap">
+				<div class="photo_blank_title">
+					<div class="photo_title">스틸컷</div>
+					<div class="blank_title"></div>
+				</div>
+				<div class="main_photo">
+					<div class="main_photo_img" style="background-image: url(images/bando2.jpg);"></div>
+				</div>
+				<div class="photo_list_wrap">
+						<ul class="photo_list">
+							<li class="photo_0" onclick="photo_show(1)">
+								<div class="photo" style="background-image: url(images/bando1.jpg);">
+								</div>
+							</li>
+							<li class="photo_1" onclick="photo_show(2)">
+								<div class="photo" style="background-image: url(images/bando2.jpg);">
+								</div>
+							</li>
+							<li class="photo_2" onclick="photo_show(3)">
+								<div class="photo" style="background-image: url(images/bando3.jpg);">
+								</div>
+							</li>
+							<li class="photo_3" onclick="photo_show(4)">
+								<div class="photo" style="background-image: url(images/bando4.jpg);">
+								</div>
+							</li>
+							<li class="photo_4" onclick="photo_show(5)">
+								<div class="photo" style="background-image: url(images/bando5.jpg);">
+								</div>
+							</li>
+						</ul>
+				</div>
+			</div>
+		</div>
+		
+		<footer>
+			<div class="footer_area">
+				<img src="images/footer_logo.png" class="footer_logo" alt="로고">
+				<ul class="footer_sns">
+					<li><i class="fab fa-facebook-f"></i></li>
+					<li><i class="fab fa-instagram"></i></li>
+					<li><i class="fab fa-twitter"></i></li>
+				</ul>
+				<div class="footer_info">
+					<address>
+						서울특별시 동작구 상도동 211-480 6층
+					</address>
+					대표자명 : 김은아 사업자 등록번호 211-36-59478<br>
+					COPYRIGHT (C) MOVIE BOX.INC ALL RIGHT RESERVED
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<div class="login_bg">
+		<div class="login_box">
+			<div class="login_title">
+				<h4>LOGIN</h4>
+				<a href="javascript:login_close();" class="btn_close">×</a>
+			</div>
+			<div class="login_area">
+				<div class="id_wrap">
+					<input type="text" class="id" placeholder="ID">
+					<input type="password" class="pw" placeholder="PASSWORD">
+					<div class="id_save_wrap">
+						<input type="checkbox" class="id_save"> <span class="id_save_txt">아이디저장</span>
+					</div>
+					<button class="login_btn" onclick="login_btn()">로그인</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<script src="js/movie.js"></script>
+
+</body>
+
+</html>

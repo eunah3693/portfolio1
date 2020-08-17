@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/join.css" type="text/css">
+	<link href="font/css/all.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+<body>
+	
+	<div class="join_bg">
+		<div class="join_wrap">
+			<h1 class="join_logo"><a href="index.html"><img src="images/logo_purple.png" alt="로고"></a></h1>
+			<table class="member_table">
+				<tr>
+					<th>한글성명<span class="member_star">★</span></th>
+					<td>
+						<input type="text" name="" class="member_input" id="name">
+					</td>
+				</tr>
+				<tr>
+					<th>생년월일<span class="member_star">★</span></th>
+					<td>
+						<input type="text" name="" class="member_input" id="birth" placeholder="6자리로 입력하시오(예:910125)">
+					</td>
+				</tr>
+				<tr>
+					<th>아이디<span class="member_star">★</span></th>
+					<td class="id">
+						<div class="member_input_id_wrap">
+							<input type="text" name="" class="member_input id" id="id">
+							<a href="#" class="member_btn id">중복확인</a>
+						</div>
+						<div class="text id">
+							영문, 숫자만 가능, 3글자 이상
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th>비밀번호<span class="member_star">★</span></th>
+					<td class="pw">
+						<input type="password" name="" class="member_input pw" id="pw">
+						<div class="text">
+							4~12자만 가능
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th class="pw_confirm_title">비밀번호 확인
+						<span class="member_star pw">★</span>
+					</th>
+					<td class="pw_confirm">
+						<input type="password" name="" class="member_input pw" id="pw2">
+					</td>
+				</tr>
+				<tr>
+					<th>이메일<span class="member_star">★</span></th>
+					<td>
+						<input type="text" name="" class="member_input mail" id="mail">
+						@
+						<input type="text" name="" class="member_input mail" id="mail_txt">
+						<select class="member_select mail" onchange="mail_input()">
+							<option>직접입력</option>
+							<option>네이버</option>
+							<option>다음</option>
+						</select>
+						<label class="checkbox_label member">
+							<input type="checkbox" name="" class="checkbox_input">
+							<span class="checkbox"></span>
+							<span class="text">이메일 수신동의 </span>
+						</label>
+					</td>
+				</tr>
+			</table>
+			<div class="join_btn_wrap">
+				<input type="button" value="회원가입" class="join_btn" onclick="join_check()">
+			</div>
+
+		</div>
+	</div>
+	
+	<script src="js/join.js"></script>
+</body>
+</html>

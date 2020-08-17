@@ -1,0 +1,48 @@
+*{margin:0; padding:0; box-sizing:border-box;}
+a{text-decoration: none; }
+li{list-style:none;}
+body, table{line-height:1; font-size: 14px;}
+input, select, textarea{border:0;}
+html,body{width: 100%; height: 100%;}
+
+
+/*체크박스*/
+.checkbox_label{position: relative; padding-left: 24px;}
+.checkbox_input{display: none;}
+.checkbox{position: absolute; left: 0; top:15px; width:15px; height:15px; border:1px solid #ccc; border-radius: 3px; }
+.checkbox_input:checked + .checkbox{background-image: url(../images/input_black.png); background-size: 100%; } 
+
+.join_bg{width: 100%; height: 100%;  background-image: url(../images/main_visual.jpg);}
+.join_wrap{width: 800px; max-width: 100%;  height: 100%;  padding: 40px 3% 40px 3%; background-color: #fff; margin: 0 auto;}
+.join_logo{padding-bottom: 40px; text-align: center; border-bottom: 1px solid #555; }
+
+.member_table{border-collapse: collapse;  width:100%; color:#555;}
+.member_table tr{border-bottom: 1px solid #555;}
+.member_table th{width:27%; text-align:left; padding-left: 2px; font-size: 13px;}
+.member_table td{width:75%; padding: 20px 0;}
+.member_input{width:95%; height:35px; background-color: rgba(0,0,0,0.2); border-radius: 10px; padding-left: 10px;}
+.member_star{color:#503396; padding-left: 3px; vertical-align: 1px;}
+
+.member_input.mail{width:108px;}
+.member_select{width:108px; height:35px; background-color: rgba(0,0,0,0.2); border-radius: 10px;  outline: none; color:#555; }
+.member_btn{width:70px; height:35px; background-color: #555; border-radius: 10px; display: inline-block; color:#fff; text-align: center; line-height: 35px; font-size: 13px;}
+
+.member_select.mail{vertical-align: -1px;}
+.checkbox_label.member{display: block; font-size: 13px;}
+.checkbox_label.member .text{display:inline-block;}
+
+@media all and (max-width:500px){
+	.member_select.mail{margin-top: 10px;}
+}
+
+.member_input_id_wrap{position: relative; width:95%; height:35px;}
+.member_btn.id{position: absolute; right:0px; top:0px;  border-radius: 0 10px 10px 0;}
+.text{padding-top:15px; font-size: 13px;}
+
+.pw_confirm_title{letter-spacing: -1.7px;}
+.member_star.pw{ padding-left: 1px;}
+
+.join_btn_wrap{margin-top: 60px; text-align: center;}
+.join_btn{width: 50%; height: 50px; background-color: #503396; color: #fff; border-radius: 10px;}
+
+

@@ -1,0 +1,132 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+*{padding: 0; margin: 0; box-sizing: border-box; font-family: 'Noto Sans KR', sans-serif;}
+li{list-style: none;}
+a{text-decoration: none;}
+html,body{width: 100%;}
+.main_wrap{overflow-x: hidden;}
+/*1280 1024 768 640 480 360*/
+
+.header_visual_wrap{height: 110px; width: 100%; background: url(../images/main_visual.jpg) no-repeat; background-size: cover;}
+.header_wrap{position: relative; z-index: 100; background-color: rgba(17,17,17,0.5);}
+header{width:1200px;  max-width: 100%; height:110px; margin: 0 auto; }
+
+.lnb_wrap{display: flex; justify-content: flex-end; }
+.lnb{display: flex; margin-top: 5px; }
+.lnb li a{display: block; margin: 0 10px; color:#cbc2e0; font-size: 12px;}
+.lnb li a:hover{color: #fff;}
+
+.gnb_wrap{display: flex; height:70px; justify-content: space-between; align-items: center; }
+
+.gnb_left_wrap{display: flex; width: 30%; }
+.fas{color:#cbc2e0; font-size: 27px;}
+
+.gnb_left{display: flex; justify-content: space-around; width: 100%;}
+.gnb_left li a{ color:#cbc2e0;}
+.gnb_left li a:hover{color: #fff;}
+
+.gnb_right_wrap{display: flex;  width: 30%;}
+.gnb_right{display: flex; justify-content: space-around; width: 100%; }
+.gnb_right li a{color:#cbc2e0;}
+.gnb_right li a:hover{color: #fff;}
+.far.fa-user{color:#cbc2e0; font-size: 27px;}
+.fas.fa-bars{display: none;}
+.gnb_sub{display: none;}
+
+@media all and (max-width:1024px){
+	header{width: 100%; }
+	.lnb li a{padding: 0 10px;}
+}
+
+@media all and (max-width:640px){
+	.header_visual_wrap{height:80px;}
+	header{width: 100%; height:80px; margin: 0 auto; position: relative; padding: 10px 10px; box-shadow: 2px 2px 10px rbga(0,0,0,0.5); }
+	.lnb_wrap{display: none;}
+	.gnb_left{display: none;}
+	.gnb_right{display: none;}
+	.gnb_sub{display: block;}
+	.fas.fa-bars{display: block; position: absolute; left: 18px;top: 28px;}
+	
+	.login_wrap{display: flex; justify-content: space-around; align-items: center; text-align: center; padding-bottom: 10px;}
+	.login_wrap a{color: #cbc2e0; width: 40%; height: 40px;  border-radius: 10px; line-height: 40px; background-color: rgba(17,17,17,1); }
+	
+	.gnb_sub{position: absolute; top: 80px; left: 0px; right: 0;  background-color: #252451; padding: 20px 0; border-radius: 20px; display: none;}
+	.gnb_sub li{height: 60px; line-height: 60px; padding: 0 20px; }
+	.gnb_sub li:last-child{border:0;}
+	.gnb_sub li a{color: #cbc2e0; display: flex; justify-content: space-between; align-items: center; padding: 0 20px;}
+	.sub_left i{color:#cbc2e0; font-size: 20px; padding-right: 10px;}
+
+}
+@media all and (max-width:360px){
+	header{width: 360px; margin: 0 auto;}
+}
+
+.store_visual_wrap{width:100%; height:30px; background-color: #ccc;}
+
+.store_wrap{width: 1200px; max-width:100%; margin: 100px auto;}
+.store_title{display: flex; width: 1100px; max-width:100%; text-align: center; margin: 0 auto; }
+.store_title li{width: 25%; height: 60px; line-height: 60px;  cursor: pointer; letter-spacing: 3px;  border-bottom: 1px solid #ccc; }
+.store_title li a{color: #888; display: block;}
+.title_on{border-top:1px solid #ccc; border-left:1px solid #ccc; border-right:1px solid #ccc; }
+
+
+.store_total_list{width:1100px; max-width: 100%; display: flex;  flex-wrap: wrap; margin: 0 auto;}
+.store_total_list li{width: 25%; cursor: pointer;}
+.store_total_img_box{width:100%; height:280px; display: flex; justify-content: center; align-items: center;}
+.store_total_img{width: 70%; }
+.store_total_info{text-align: center; }
+.store_total_info h4{font-size: 1.1rem; line-height: 2; color: #333; }
+.store_total_info h5{font-size: 1rem; line-height: 1.5; color: #555; font-weight: 400;}
+.store_total_info b{font-size: 1rem; line-height: 1; color: #555; font-weight: 400;}
+
+.store_total_set_box{position: relative; width:100%; height:280px; display: flex; justify-content: center; align-items: center;}
+.store_total_set{width: 70%;}
+.set_ticket{position: absolute; width:100px; right:0; bottom: 0; transform: translate(-30%, -150%);}
+
+.store_total_list.event, .store_total_list.set, .store_total_list.food{display: none;}
+
+@media all and (max-width:800px){
+	.store_total_list li{width:50%;}
+}
+
+@media all and (max-width:500px){
+	.store_title{flex-wrap: wrap;}
+	.store_title li{width:50%; border:1px solid #ccc; border-collapse: collapse;}
+	.store_total_img_box{height:200px; }
+	.store_total_set_box{height:200px; }
+	.set_ticket{ transform: translate(-10%, -80%);}
+	html,body{font-size: 14px;}
+}
+
+footer{background-color: #111111;}
+.footer_area{width: 1100px;  max-width: 100%; margin: 0 auto; display: flex; padding: 5% 0; align-items: center; flex-direction: column;}
+.footer_sns{display: flex; color: #cbc2e0; padding-top: 20px;}
+.footer_sns li{padding: 0 20px; cursor: pointer;}
+.footer_info{color:#cbc2e0; font-size: 15px; text-align: center; padding-top: 20px;}
+.footer_info address{font-style: normal;}
+
+@media all and (max-width:1024px){
+	.footer_area{width: 100%}
+}
+
+@media all and (max-width:360px){
+	.footer_info{font-size: 13px;}
+}
+
+
+/**로그인****************************************/
+.login_bg{position: fixed; left: 0;top:0; right: 0;bottom: 0; background-color: rgba(170, 170, 170, 0.53); z-index: 100000; display: none;}
+.login_box{position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); width: 500px; max-width: 90%; background-color: #fff; border-radius: 10px; overflow: hidden;}
+
+.login_title{width: 100%; height: 90px; line-height: 90px; background-color:#503396;  display: flex; justify-content: space-between;}
+.login_box h4{color: #cbc2e0; letter-spacing: 2px; font-size: 27px; font-weight: 500; padding-left: 5%;}
+.btn_close{font-size: 70px; color: #cbc2e0; transform: translateY(-10%); padding-right: 3%;}
+
+.login_area{width: 100%; display: flex; padding: 8% 0; width: 100%; align-items: center; justify-content: center;}
+.id_wrap{width: 100%;}
+.id{display: block; width: 80%; height: 50px;  margin: 0 auto 20px auto; padding-left: 20px; border:1px solid #ccc;}
+.pw{display: block; width: 80%; height: 50px;  margin: 0 auto 20px auto; padding-left: 20px; border:1px solid #ccc;}
+.id_save_wrap{width: 100%; text-align: center; }
+.id_save{width: 20px; height: 20px;  vertical-align: -5px; }
+.id_save_txt{padding-left: 8px; color:#444; font-size: 13px;}
+.login_btn{display: block; width: 80%; height: 50px;  margin: 20px auto 0 auto; background-color: #ccc; border:0; outline: none; border-radius: 10px; font-size: 15px; color: #444;}

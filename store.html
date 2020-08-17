@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Megabox</title>
+	<link rel="stylesheet" type="text/css" href="css/store.css">
+	<link href="font/css/all.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+
+<body>
+	<div class="main_wrap">
+		<!--헤더영역-->
+		<div class="header_visual_wrap">
+
+			<div class="header_wrap">
+				<header>
+					<div class="lnb_wrap">
+						<ul class="lnb">
+							<li>
+								<a href="javascript:login_popup();">
+									로그인
+								</a>
+							</li>
+							<li>
+								<a href="join.html">
+									회원가입
+								</a>
+							</li>
+							<li>
+								<a href="movielist.html">
+									빠른예매
+								</a>
+							</li>
+						</ul>
+					</div>
+					<nav>
+					<div class="gnb_wrap">
+						
+								<i class="fas fa-bars" id="btn_toggle"></i>
+								<ul class="gnb_sub" id="gnb_sub">
+									<div class="login_wrap">
+											<a href="javascript:login_popup();">로그인</a>
+											<a href="join.html">회원가입</a>
+									</div>
+									<li>
+										<a href="movielist.html">
+											<span class="sub_left">		<i class="fas fa-video"></i>
+											영화
+											</span>
+											
+											<i class="fas fa-angle-right"></i>
+										</a>
+									</li>
+									<li>
+										<a href="movielist.html">
+											<span class="sub_left">
+											<i class="fas fa-money-bill-wave-alt"></i>
+											예매
+											</span>
+											
+											<i class="fas fa-angle-right"></i>
+										</a>
+									</li>
+									<li>
+										<a href="movielist.html">
+											<span class="sub_left">
+											<i class="fas fa-couch"></i>
+											극장
+											</span>
+											
+											<i class="fas fa-angle-right"></i>
+										</a>
+									</li>
+									<li>
+										<a href="store.html">
+											<span class="sub_left">
+											<i class="fas fa-bookmark"></i>
+											이벤트
+											</span>
+											
+											<i class="fas fa-angle-right"></i>
+										</a>
+									</li>
+									<li>
+										<a href="store.html">
+											<span class="sub_left">
+											<i class="fas fa-house-user"></i>
+											스토어
+											</span>
+											
+											<i class="fas fa-angle-right"></i>
+										</a>
+									</li>
+									<li>
+										<a href="store.html">
+											<span class="sub_left">
+											<i class="fas fa-shopping-cart"></i>
+											혜택
+											</span>
+											
+											<i class="fas fa-angle-right"></i>
+										</a>
+									</li>
+								</ul>
+
+						<div class="gnb_left_wrap">
+							
+							
+							<ul class="gnb_left">
+								<li>
+									<a href="movielist.html">
+										영화 
+									</a>
+								</li>
+								<li>
+									<a href="movielist.html">
+										예매
+									</a>
+								</li>
+								<li>
+									<a href="movielist.html">
+										극장
+									</a>
+								</li>
+								
+							</ul>
+						</div>
+						<h1><a href="index.html"><img src="images/header_logo.png" alt="로고" class="header_logo"></a></h1>
+						<div class="gnb_right_wrap">
+							<ul class="gnb_right">
+								<li>
+									<a href="store.html">
+										이벤트
+									</a>
+								</li>
+								<li>
+									<a href="store.html">
+										스토어
+									</a>
+								</li>
+								<li>
+									<a href="store.html">
+										혜택
+									</a>
+								</li>
+							</ul>
+						</div>
+						
+					</div>
+					</nav>
+
+				</header>
+			</div>
+			</div>
+			<!--메인비쥬얼-->
+			<div class="store_visual_wrap">
+			</div>
+			<div class="store_wrap">
+				<ul class="store_title">
+					<li class="store_total_title title_on">
+						<a href="javascript:store_show(0);">전체상품</a>
+					</li>
+					<li class="store_ticket_title">
+						<a href="javascript:store_show(1);">이벤트티켓</a>
+					</li>
+					<li class="store_set_title">
+						<a href="javascript:store_show(2);">세트</a>
+					</li>
+					<li class="store_popcorn_title">
+						<a href="javascript:store_show(3);">팝콘/음료</a>
+					</li>
+				</ul>
+				<ul class="store_total_list">
+					<li>
+						
+						<div class="store_total_img_box">	
+							<img src="images/botique_ticket.jpg" class="store_total_img ticket">
+						</div>
+						<div class="store_total_info">
+							<h4>더부티크 티켓</h4>
+							<h5>더부티크 전용 관람권</h5>
+							<b>35,000원</b>
+						</div>
+
+					</li>
+					<li>
+						
+						<div class="store_total_img_box">	
+							<img src="images/botique_ticket2.jpg" class="store_total_img ticket">
+						</div>
+						<div class="store_total_info">
+							<h4>더부티크 스위트 티켓</h4>
+							<h5>더부티크 스위트 전용 관람권</h5>
+							<b>55,000원</b>
+						</div>
+
+					</li>
+					<li>
+						
+						<div class="store_total_img_box">	
+							<img src="images/general_ticket.png" class="store_total_img ticket">
+						</div>
+						<div class="store_total_info">
+							<h4>일반 티켓</h4>
+							<h5>영화 관람권</h5>
+							<b>10,000원</b>
+						</div>
+
+					</li>
+					<li>
+						<div class="store_total_img_box">	
+							<img src="images/food1.png" class="store_total_img food">
+						</div>
+						<div class="store_total_info">
+							<h4>즉석구이콤보</h4>
+							<h5>팝콘1+탄산음료+즉석구이</h5>
+							<b>13,000원</b>
+						</div>
+
+					</li>
+					<li>
+						<div class="store_total_img_box">	
+							<img src="images/food2.png" class="store_total_img food">
+						</div>
+						<div class="store_total_info">
+							<h4>더블콤보</h4>
+							<h5>팝콘2+탄산음료2</h5>
+							<b>12,000원</b>
+						</div>
+
+					</li>
+					<li>
+						<div class="store_total_img_box">	
+							<img src="images/food3.png" class="store_total_img food">
+						</div>
+						<div class="store_total_info">
+							<h4>반반에이드콤보</h4>
+							<h5>반반팝콘+에이드2</h5>
+							<b>13,000원</b>
+						</div>
+
+					</li>
+					<li>
+						<div class="store_total_set_box">	
+							<img src="images/food1.png" class="store_total_set">
+							<img src="images/general_ticket.png" class="set_ticket">
+						</div>
+						<div class="store_total_info">
+							<h4>즉석구이콤보 세트</h4>
+							<h5>팝콘1+탄산음료2+즉석구이+티켓2</h5>
+							<b>13,000원</b>
+						</div>
+					</li>
+					<li>
+						<div class="store_total_set_box">	
+							<img src="images/food2.png" class="store_total_set">
+							<img src="images/general_ticket.png" class="set_ticket">
+						</div>
+						<div class="store_total_info">
+							<h4>더블콤보 세트</h4>
+							<h5>팝콘2+탄산음료2+티켓2</h5>
+							<b>12,000원</b>
+						</div>
+					</li>
+					<li>
+						<div class="store_total_set_box">	
+							<img src="images/food3.png" class="store_total_set">
+							<img src="images/general_ticket.png" class="set_ticket">
+						</div>
+						<div class="store_total_info">
+							<h4>반반에이드콤보 세트</h4>
+							<h5>반반팝콘+에이드2+티켓2</h5>
+							<b>13,000원</b>
+						</div>
+					</li>
+					<li>
+						<div class="store_total_img_box">	
+							<img src="images/festival1.jpg" class="store_total_img food">
+						</div>
+						<div class="store_total_info">
+							<h4>랩비트 페스티벌 (9/19)</h4>
+							<h5>페스티벌입장권+영화일반관람권2매</h5>
+							<b>119,000원</b>
+						</div>
+
+					</li>
+					<li>
+						<div class="store_total_img_box">	
+							<img src="images/festival2.jpg" class="store_total_img food">
+						</div>
+						<div class="store_total_info">
+							<h4>랩비트 페스티벌 (9/19)</h4>
+							<h5>페스티벌입장권+영화일반관람권1매</h5>
+							<b>67,000원</b>
+						</div>
+
+					</li>
+					<li>
+						<div class="store_total_img_box">	
+							<img src="images/festival3.jpg" class="store_total_img food">
+						</div>
+						<div class="store_total_info">
+							<h4>랩비트 페스티벌 (9/19)</h4>
+							<h5>페스티벌입장권+영화일반관람권1매</h5>
+							<b>67,000원</b>
+						</div>
+
+					</li>
+				</ul>
+				
+				<ul class="store_total_list event">
+					<li>
+						
+						<div class="store_total_img_box">	
+							<img src="images/botique_ticket.jpg" class="store_total_img ticket">
+						</div>
+						<div class="store_total_info">
+							<h4>더부티크 티켓</h4>
+							<h5>더부티크 전용 관람권</h5>
+							<b>35,000원</b>
+						</div>
+
+					</li>
+					<li>
+						
+						<div class="store_total_img_box">	
+							<img src="images/botique_ticket2.jpg" class="store_total_img ticket">
+						</div>
+						<div class="store_total_info">
+							<h4>더부티크 스위트 티켓</h4>
+							<h5>더부티크 스위트 전용 관람권</h5>
+							<b>55,000원</b>
+						</div>
+
+					</li>
+					<li>
+						
+						<div class="store_total_img_box">	
+							<img src="images/general_ticket.png" class="store_total_img ticket">
+						</div>
+						<div class="store_total_info">
+							<h4>일반 티켓</h4>
+							<h5>영화 관람권</h5>
+							<b>10,000원</b>
+						</div>
+
+					</li>
+					<li>
+						<div class="store_total_img_box">	
+							<img src="images/festival1.jpg" class="store_total_img food">
+						</div>
+						<div class="store_total_info">
+							<h4>랩비트 페스티벌 (9/19)</h4>
+							<h5>페스티벌입장권+영화일반관람권2매</h5>
+							<b>119,000원</b>
+						</div>
+
+					</li>
+					<li>
+						<div class="store_total_img_box">	
+							<img src="images/festival2.jpg" class="store_total_img food">
+						</div>
+						<div class="store_total_info">
+							<h4>랩비트 페스티벌 (9/19)</h4>
+							<h5>페스티벌입장권+영화일반관람권1매</h5>
+							<b>67,000원</b>
+						</div>
+
+					</li>
+					<li>
+						<div class="store_total_img_box">	
+							<img src="images/festival3.jpg" class="store_total_img food">
+						</div>
+						<div class="store_total_info">
+							<h4>랩비트 페스티벌 (9/19)</h4>
+							<h5>페스티벌입장권+영화일반관람권1매</h5>
+							<b>67,000원</b>
+						</div>
+
+					</li>
+				</ul>
+				
+				<ul class="store_total_list set">
+					<li>
+						<div class="store_total_set_box">	
+							<img src="images/food1.png" class="store_total_set">
+							<img src="images/general_ticket.png" class="set_ticket">
+						</div>
+						<div class="store_total_info">
+							<h4>즉석구이콤보 세트</h4>
+							<h5>팝콘1+탄산음료2+즉석구이+티켓2</h5>
+							<b>13,000원</b>
+						</div>
+					</li>
+					<li>
+						<div class="store_total_set_box">	
+							<img src="images/food2.png" class="store_total_set">
+							<img src="images/general_ticket.png" class="set_ticket">
+						</div>
+						<div class="store_total_info">
+							<h4>더블콤보 세트</h4>
+							<h5>팝콘2+탄산음료2+티켓2</h5>
+							<b>12,000원</b>
+						</div>
+					</li>
+					<li>
+						<div class="store_total_set_box">	
+							<img src="images/food3.png" class="store_total_set">
+							<img src="images/general_ticket.png" class="set_ticket">
+						</div>
+						<div class="store_total_info">
+							<h4>반반에이드콤보 세트</h4>
+							<h5>반반팝콘+에이드2+티켓2</h5>
+							<b>13,000원</b>
+						</div>
+					</li>
+					
+				</ul>
+				
+				<ul class="store_total_list food">
+					
+					<li>
+						<div class="store_total_img_box">	
+							<img src="images/food1.png" class="store_total_img food">
+						</div>
+						<div class="store_total_info">
+							<h4>즉석구이콤보</h4>
+							<h5>팝콘1+탄산음료+즉석구이</h5>
+							<b>13,000원</b>
+						</div>
+
+					</li>
+					<li>
+						<div class="store_total_img_box">	
+							<img src="images/food2.png" class="store_total_img food">
+						</div>
+						<div class="store_total_info">
+							<h4>더블콤보</h4>
+							<h5>팝콘2+탄산음료2</h5>
+							<b>12,000원</b>
+						</div>
+
+					</li>
+					<li>
+						<div class="store_total_img_box">	
+							<img src="images/food3.png" class="store_total_img food">
+						</div>
+						<div class="store_total_info">
+							<h4>반반에이드콤보</h4>
+							<h5>반반팝콘+에이드2</h5>
+							<b>13,000원</b>
+						</div>
+
+					</li>
+					
+				</ul>
+				</div>
+				
+
+		
+		
+		
+		<footer>
+			<div class="footer_area">
+				<img src="images/footer_logo.png" class="footer_logo" alt="로고">
+				<ul class="footer_sns">
+					<li><i class="fab fa-facebook-f"></i></li>
+					<li><i class="fab fa-instagram"></i></li>
+					<li><i class="fab fa-twitter"></i></li>
+				</ul>
+				<div class="footer_info">
+					<address>
+						서울특별시 동작구 상도동 211-480 6층
+					</address>
+					대표자명 : 김은아 사업자 등록번호 211-36-59478<br>
+					COPYRIGHT (C) MOVIE BOX.INC ALL RIGHT RESERVED
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	
+	<div class="login_bg">
+		<div class="login_box">
+			<div class="login_title">
+				<h4>LOGIN</h4>
+				<a href="javascript:login_close();" class="btn_close">×</a>
+			</div>
+			<div class="login_area">
+				<div class="id_wrap">
+					<input type="text" class="id" placeholder="ID">
+					<input type="password" class="pw" placeholder="PASSWORD">
+					<div class="id_save_wrap">
+						<input type="checkbox" class="id_save"> <span class="id_save_txt">아이디저장</span>
+					</div>
+					<button class="login_btn" onclick="login_btn()">로그인</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="login_bg">
+		<div class="login_box">
+			<div class="login_title">
+				<h4>LOGIN</h4>
+				<a href="javascript:login_close();" class="btn_close">×</a>
+			</div>
+			<div class="login_area">
+				<div class="id_wrap">
+					<input type="text" class="id" placeholder="ID">
+					<input type="password" class="pw" placeholder="PASSWORD">
+					<div class="id_save_wrap">
+						<input type="checkbox" class="id_save"> <span class="id_save_txt">아이디저장</span>
+					</div>
+					<button class="login_btn" onclick="login_btn()">로그인</button>
+				</div>
+			</div>
+		</div>
+	</div>
+<script src="js/store.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+
+</html>
